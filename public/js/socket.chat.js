@@ -40,3 +40,7 @@ socket.on('crearMensaje', function(resp) {
 socket.on('listarPersonas', function(resp) {
     console.log(resp);
 });
+
+socket.on('crearMensajePrivado', (mensaje) => {
+    console.log(mensaje);
+})
