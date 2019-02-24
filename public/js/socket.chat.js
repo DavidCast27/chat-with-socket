@@ -33,9 +33,10 @@ socket.emit('enviarMensaje', {
     console.log('respuesta server: ', resp);
 });
 
-// Escuchar información
-socket.on('enviarMensaje', function(mensaje) {
+socket.on('crearMensaje', function(resp) {
+    console.log(resp);
+});
 
-    console.log('Servidor:', mensaje);
-
+socket.on('listarPersonas', function(resp) {
+    console.log(resp);
 });
